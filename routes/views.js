@@ -15,6 +15,12 @@ router.get('/test', (req, res) => {
     });
 });
 
+router.get('/search', (req, res) => {
+    res.sendFile(`/views/search.html`, {
+        root: `${__dirname}/../`
+    });
+})
+
 router.get('/pokemon', async (req, res) => {
     
     try {
